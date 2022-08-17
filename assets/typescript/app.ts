@@ -1,1 +1,3 @@
-console.log('Hello World');
+import ControlCalculator from "./calculator/ControlCalculator.js";
+
+new ControlCalculator();
