@@ -1,0 +1,26 @@
+{
+  "name": "calculator-v2",
+  "version": "1.0.0",
+  "description": "Calculator Project Developed in TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch --style=compressed assets/scss:assets/css",
+    "tsc": "tsc --watch",
+    "dev": "concurrently \"npm run sass\" \"npm run tsc\""
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "css3",
+    "javascript",
+    "typescript"
+  ],
+  "author": "Alexandre Merched",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "sass": "^1.54.4",
+    "typescript": "^4.7.4"
+  }
+}
