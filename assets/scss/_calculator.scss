@@ -1,11 +1,11 @@
 @use "util";
-@use "botao";
+@use "button";
 
 $corCalculadora: #E6E6E6;
 $largura: 400px;
 $altura: 600px;
 
-#calculadora {
+#calculator {
     width: $largura;
     height: $altura;
     background: $corCalculadora;
@@ -17,7 +17,7 @@ $altura: 600px;
     flex-direction: column;
 }
 
-#tela {
+#screen {
     width: $largura - 60;
     height: 105px;
     background: linear-gradient(180deg, $corCalculadora 0%, $corCalculadora 0.01%, $corCalculadora 100%);
@@ -26,7 +26,7 @@ $altura: 600px;
     @include util.flex-center;
 }
 
-#brilho {
+#shine {
     position: absolute;
     z-index: 1;
 }
@@ -70,7 +70,7 @@ $altura: 600px;
     }
 }
 
-#teclado {
+#keyboard {
     width: $largura - 60;
     height: $altura - 210;
     display: grid;
@@ -79,17 +79,17 @@ $altura: 600px;
     grid-template-rows: repeat(5, 1fr);
     grid-gap: 10px;
     button {
-        @include botao.botaoCor(#525252);
+        @include button.botaoCor(#525252);
         border-radius: 10px;
         color: #FFF;
         font-size: 32px;
         outline: none;
         cursor: pointer;
         &.orange {
-            @include botao.botaoCor(#FF760C);
+            @include button.botaoCor(#FF760C);
         }
     }
-    #adicao {
+    #addition {
         grid-column-start: 4;
         grid-column-end: 4;
         grid-row-start: 4;
